@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+  color: white;
+  overflow: hidden;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 8vw;
+  letter-spacing: -4px;
+}
+
+.hero p {
+  opacity: 0.7;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 40px;
+  opacity: 0.5;
+}
+
+/* PANELS */
+.panel {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+}
+
+.dark { background: #111; }
+.light { background: #f5f5f5; color: black; }
+
+/* EXPERIMENT */
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* CURSOR */
+.cursor, .cursor-follower {
+  position: fixed;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.cursor {
+  width: 8px;
+  height: 8px;
+  background: white;
+  z-index: 1000;
+}
+
+.cursor-follower {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  opacity: 0.5;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NEXORA LAB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>NEXORA</h1>
+  <p>Interactive Web Experiments</p>
+  <span class="scroll">SCROLL ↓</span>
+</section>
+
+<!-- Scroll Sections -->
+<section class="panel dark">
+  <h2>Motion reacts to you</h2>
+</section>
+
+<section class="panel experiment">
+  <canvas id="particles"></canvas>
+  <h2>Click. Break. Create.</h2>
+</section>
+
+<section class="panel light">
+  <h2>End of Experiment</h2>
+</section>
+
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis"></script>
+
+<script src="cursor.js"></script>
+<script src="scroll.js"></script>
+<script src="experiments.js"></script>
+</body>
+</html>
